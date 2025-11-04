@@ -77,7 +77,7 @@ export default function Header() {
             <div className="bg-primary-600 p-2 rounded-xl">
               {/* <GraduationCap className="h-8 w-8 text-white" /> */}
             <Image
-                src="/images/logo.JPEG"
+                src="/images/logo.jpeg"
                 alt="Centro de Educación Bilingüe Carmelitano San José"
                 width={32}
                 height={32}

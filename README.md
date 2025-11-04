@@ -1,185 +1,179 @@
-# Centro de Educación Bilingüe Carmelitano San José
+# 🎓 Centro de Educación Bilingüe Carmelitano San José
 
-Este es el sitio web oficial del Centro de Educación Bilingüe Carmelitano San José, desarrollado con Next.js 14, TypeScript y Tailwind CSS.
+Sitio web oficial del Centro de Educación Bilingüe Carmelitano San José - Una plataforma moderna y profesional para presentar nuestra institución educativa.
 
-## 🎯 Características del Proyecto
+![Next.js](https://img.shields.io/badge/Next.js-16.0.1-black?style=for-the-badge&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0.0-blue?style=for-the-badge&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.0-38B2AC?style=for-the-badge&logo=tailwind-css)
 
-- **Diseño Profesional**: Inspirado en sitios web modernos con un enfoque educativo
-- **Banner de Imágenes**: Carrusel interactivo en la página principal
-- **Animaciones Suaves**: Implementadas con Framer Motion para transiciones profesionales
-- **Secciones Completas**: Inicio, Nosotros, Modalidades, Matrícula, Contáctanos
-- **Diseño Responsive**: Optimizado para todos los dispositivos
-- **Smooth Scrolling**: Navegación suave entre secciones
-- **Formulario de Contacto**: Sistema interactivo de contacto
+## 🌐 Repositorio
 
-## 🚀 Tecnologías Utilizadas
+🔗 **[GitHub Repository](https://github.com/ingricardotoro/carmelitano)**
 
-- **Next.js 14** - Framework de React con App Router
-- **TypeScript** - Tipado estático para JavaScript
-- **Tailwind CSS** - Framework de CSS utility-first
-- **Framer Motion** - Librería de animaciones
-- **Lucide React** - Iconos modernos
-- **React Icons** - Iconos adicionales
+## ✨ Características
+
+### 🖥️ Diseño Profesional
+- **Diseño inspirado** en sitios web modernos y profesionales
+- **Responsive design** que se adapta a todos los dispositivos
+- **Animaciones suaves** con Framer Motion para una experiencia fluida
+- **Paleta de colores** institucional con gradientes elegantes
+
+### 📱 Secciones Principales
+- **🏠 Inicio** - Hero section con carrusel de imágenes
+- **👥 Nosotros** - Historia, misión, visión y valores
+- **📚 Modalidades** - Programas educativos ofrecidos
+- **🖼️ Galería** - Fotografías organizadas por categorías
+- **📋 Matrícula** - Información de inscripción y becas
+- **📧 Contáctanos** - Formulario de contacto y ubicación
+
+### 🎯 Funcionalidades Especiales
+- **Navegación suave** entre secciones con scroll animado
+- **Galería fotográfica** con lightbox y navegación por categorías
+- **Formulario de contacto** con validación en tiempo real
+- **Optimización de imágenes** con Next.js Image
+- **SEO optimizado** con metadata dinámico
+
+## 🛠️ Tecnologías Utilizadas
+
+| Tecnología | Versión | Propósito |
+|------------|---------|-----------|
+| **Next.js** | 16.0.1 | Framework React con App Router |
+| **TypeScript** | 5.0+ | Tipado estático para JavaScript |
+| **Tailwind CSS** | 3.4.0 | Framework de CSS utility-first |
+| **Framer Motion** | 12.23.24 | Animaciones y transiciones |
+| **Lucide React** | - | Iconografía moderna |
+| **React Hook Form** | - | Manejo de formularios |
+
+## 🚀 Instalación y Desarrollo
+
+### Prerrequisitos
+- Node.js 18.0 o superior
+- npm o yarn
+
+### Instalación
+```bash
+# Clonar el repositorio
+git clone https://github.com/ingricardotoro/carmelitano.git
+
+# Navegar al directorio
+cd carmelitano
+
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo
+npm run dev
+```
+
+### Scripts Disponibles
+```bash
+npm run dev      # Servidor de desarrollo
+npm run build    # Construcción para producción
+npm run start    # Servidor de producción
+npm run lint     # Verificar código con ESLint
+```
 
 ## 📁 Estructura del Proyecto
 
 ```
-src/
-├── app/                    # App Router de Next.js
-│   ├── globals.css        # Estilos globales
-│   ├── layout.tsx         # Layout principal
-│   └── page.tsx           # Página de inicio
-├── components/
-│   ├── layout/            # Componentes de layout
-│   │   ├── Header.tsx     # Encabezado y navegación
-│   │   └── Footer.tsx     # Pie de página
-│   └── sections/          # Secciones de la página
-│       ├── HeroSection.tsx        # Banner principal
-│       ├── AboutSection.tsx       # Sobre nosotros
-│       ├── ModalitiesSection.tsx  # Modalidades educativas
-│       ├── EnrollmentSection.tsx  # Proceso de matrícula
-│       └── ContactSection.tsx     # Formulario de contacto
+carmelitano/
+├── public/
+│   ├── images/
+│   │   ├── banner/          # Imágenes del carrusel
+│   │   ├── gallery/         # Galería fotográfica
+│   │   └── logo.jpeg        # Logo institucional
+├── src/
+│   ├── app/
+│   │   ├── galeria/         # Página de galería
+│   │   ├── layout.tsx       # Layout principal
+│   │   └── page.tsx         # Página de inicio
+│   └── components/
+│       ├── layout/
+│       │   ├── Header.tsx   # Navegación principal
+│       │   └── Footer.tsx   # Pie de página
+│       └── sections/
+│           ├── HeroSection.tsx
+│           ├── AboutSection.tsx
+│           ├── ModalitiesSection.tsx
+│           ├── Gallery.tsx
+│           ├── EnrollmentSection.tsx
+│           └── ContactSection.tsx
 ```
 
-## 🎨 Características de Diseño
+## 🎨 Galería Fotográfica
 
-### Paleta de Colores
-- **Primario**: Azules (#0ea5e9 - #0369a1)
-- **Secundario**: Naranjas (#f07313 - #bb3e09)
-- **Neutros**: Grises para texto y fondos
+La galería está organizada en categorías:
 
-### Tipografía
-- **Display**: Poppins (títulos y encabezados)
-- **Body**: Inter (texto del cuerpo)
+- **📚 Giras y Retiros Espirituales** - Actividades pedagógicas y espirituales
+- **👨‍🎓 Actividades Académicas** - Momentos de aprendizaje en el aula
+- **🌱 Reforestación** - Proyectos ambientales estudiantiles
+- **🎓 Graduados** - Celebraciones y logros académicos
 
-### Animaciones
-- Fade in/out effects
-- Slide animations
-- Scale transformations
-- Smooth scrolling
-- Hover effects
+Cada categoría incluye:
+- Vista de cuadrícula responsive
+- Lightbox para visualización ampliada
+- Navegación entre imágenes con teclado
+- Descripción de cada fotografía
 
-## 🔧 Instalación y Configuración
+## 🌐 Despliegue
 
-1. **Clonar el repositorio**
-   ```bash
-   git clone [url-del-repositorio]
-   cd carmelitano
-   ```
+### Vercel (Recomendado)
+```bash
+# Instalar Vercel CLI
+npm i -g vercel
 
-2. **Instalar dependencias**
-   ```bash
-   npm install
-   ```
+# Desplegar
+vercel
+```
 
-3. **Ejecutar en modo desarrollo**
-   ```bash
-   npm run dev
-   ```
+### Otras Plataformas
+- **Netlify**: Conectar repositorio y despliegue automático
+- **AWS Amplify**: Hosting con CI/CD integrado
+- **GitHub Pages**: Para sitios estáticos
 
-4. **Construir para producción**
-   ```bash
-   npm run build
-   npm start
-   ```
+## 📊 Características Técnicas
 
-## 📱 Secciones del Sitio Web
+### Performance
+- **Lazy Loading** de imágenes y componentes
+- **Optimización automática** de imágenes con Next.js
+- **Bundle splitting** para cargas más rápidas
+- **Core Web Vitals** optimizados
 
-### 🏠 Inicio (Hero Section)
-- Banner rotativo con 4 imágenes
-- Controles de navegación manual
-- Características destacadas del colegio
-- Call-to-action buttons
-- Indicador de scroll animado
+### SEO
+- **Meta tags** dinámicos para cada página
+- **Structured data** para motores de búsqueda
+- **Open Graph** tags para redes sociales
+- **Sitemap** automático
 
-### 👥 Nosotros
-- Misión y Visión institucional
-- Valores fundamentales
-- Logros y estadísticas
-- Timeline de la historia del centro
-- Información de contacto para visitas
+### Accesibilidad
+- **Navegación por teclado** completa
+- **Screen reader** friendly
+- **Contraste de colores** WCAG 2.1 AA
+- **Focus management** apropiado
 
-### 🎓 Modalidades Educativas
-- Preescolar (2-6 años)
-- Primaria (6-12 años)
-- Secundaria (12-18 años)
-- Programas Especiales
-- Horarios y características de cada nivel
+## 📞 Contacto
 
-### 📋 Matrícula
-- Proceso paso a paso de admisión
-- Planes de inversión educativa
-- Programa de becas disponibles
-- Fechas importantes del año lectivo
-- Información de contacto para admisiones
+**Centro de Educación Bilingüe Carmelitano San José**
+- 🌐 Sitio web: [https://github.com/ingricardotoro/carmelitano](https://github.com/ingricardotoro/carmelitano)
+- 📧 Email: info@carmelitanosanjose.edu
+- 📱 Redes sociales: 
+  - [Facebook](https://www.facebook.com/p/Instituto-Carmelitano-San-José-Oficial-100063891044026/)
+  - [Instagram](https://www.instagram.com/instituto_carmelitano_san_jose/)
 
-### 📞 Contáctanos
-- Formulario de contacto interactivo
-- Información de contacto completa
-- Mapa de ubicación
-- Enlaces a redes sociales
-- Departamentos específicos
+## 🤝 Contribución
 
-## 🎯 Funcionalidades Interactivas
+Las contribuciones son bienvenidas. Por favor:
 
-- **Navegación Suave**: Scroll automático entre secciones
-- **Formulario Reactivo**: Validación en tiempo real
-- **Carrusel Automático**: Banner con reproducción automática
-- **Animaciones en Scroll**: Elementos que aparecen al hacer scroll
-- **Hover Effects**: Efectos interactivos en botones y tarjetas
-- **Responsive Design**: Adaptable a móviles, tablets y desktop
-
-## 🌟 Características Educativas
-
-### Programas Académicos
-- Educación 100% bilingüe (español-inglés)
-- Metodologías activas de aprendizaje
-- Formación en valores cristianos
-- Preparación para exámenes internacionales
-
-### Servicios Adicionales
-- Actividades extracurriculares
-- Deportes y recreación
-- Arte y cultura
-- Tecnología educativa
-- Intercambios estudiantiles
-
-## 📊 SEO y Rendimiento
-
-- Metadata optimizada para motores de búsqueda
-- Imágenes optimizadas con Next.js Image
-- Lazy loading de componentes
-- Código optimizado para Core Web Vitals
-- Estructura semántica HTML5
-
-## 🚀 Deployment
-
-El proyecto está configurado para ser desplegado en:
-- Vercel (recomendado para Next.js)
-- Netlify
-- AWS Amplify
-- Cualquier plataforma que soporte Node.js
-
-## 📝 Personalización
-
-Para personalizar el sitio web:
-
-1. **Colores**: Modificar `tailwind.config.js`
-2. **Contenido**: Editar los archivos de componentes en `/src/components/`
-3. **Imágenes**: Reemplazar placeholders en `/public/`
-4. **Información**: Actualizar datos de contacto y contenido educativo
-
-## 📞 Información de Contacto
-
-- **Teléfono**: +506 2222-3333
-- **Email**: info@carmelitanosj.edu.cr
-- **Dirección**: San José, Costa Rica
-- **Horarios**: Lunes a Viernes, 7:00 AM - 4:00 PM
+1. Fork el proyecto
+2. Crear una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abrir un Pull Request
 
 ## 📄 Licencia
 
-Este proyecto está desarrollado para el Centro de Educación Bilingüe Carmelitano San José.
+Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
 
 ---
 
-*Desarrollado con ❤️ para la educación de calidad*
+**Desarrollado con ❤️ para la comunidad educativa del Centro de Educación Bilingüe Carmelitano San José**

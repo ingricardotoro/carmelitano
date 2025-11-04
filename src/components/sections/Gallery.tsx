@@ -214,7 +214,7 @@ export default function Gallery({ showHeader = true }: Readonly<GalleryProps>) {
             <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
               <div className="bg-primary-600 p-2 rounded-xl">
                 <Image
-                  src="/images/logo.JPEG"
+                  src="/images/logo.jpeg"
                   alt="Centro de Educación Bilingüe Carmelitano San José"
                   width={28}
                   height={28}

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Poppins } from 'next/font/google'
 import './globals.css'
+import ScrollToTopButton from '@/components/layout/ScrollToTopButton'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -26,13 +27,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode
-}) {
+}>) {
   return (
     <html lang="es" className={`${inter.variable} ${poppins.variable}`}>
       <body className="font-sans antialiased">
         {children}
+        <ScrollToTopButton />
       </body>
     </html>
   )

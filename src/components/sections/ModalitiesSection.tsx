@@ -50,7 +50,7 @@ const educationLevels = [
   {
     icon: BookOpen,
     title: 'Secundaria',
-    subtitle: 'BTP Humanidades - Español',
+    subtitle: 'Bach. Ciencias y Humanidades - Español',
     ageRange: '12-18 años',
     description: 'Formación integral con énfasis en liderazgo, preparación universitaria y competencias del siglo XXI.',
     features: [
@@ -71,10 +71,10 @@ const educationLevels = [
     features: [
       'Deportes: Taekwondo, fútbol, baloncesto',
       'Artes: Piano, Pintura, Guitarra, flauta, Batería',
-      'Robótica y computación',
+      'Academia de Inglés',
       'Matemáticas y Español'
     ],
-    schedule: '3:00 PM - 5:30 PM',
+    schedule: 'Sabado 8:00 AM - 12:00 M',
     color: 'from-purple-500 to-indigo-500'
   }
 ]
@@ -108,8 +108,8 @@ const advantages = [
   'Seguridad privada y servicio de transporte',
   'Formación en valores cristianos',
   'Giras Pedagógicas y Retiros Espirituales',
-  'Ambiente familiar y personalizado',
-  'Instalaciones modernas y seguras',
+  'Convenios con universidades nacionales para graduados',
+  'Amplias áreas verdes',
   'Actividades extracurriculares diversas'
 ]
 
@@ -185,13 +185,13 @@ export default function ModalitiesSection() {
                   ))}
                 </ul>
 
-                <motion.button
+                {/* <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="w-full bg-gray-100 hover:bg-primary-600 hover:text-white text-gray-700 font-medium py-3 rounded-lg transition-all duration-300"
                 >
                   Más Información
-                </motion.button>
+                </motion.button> */}
               </div>
             </motion.div>
           ))}
@@ -272,7 +272,7 @@ export default function ModalitiesSection() {
                   <div className="flex items-center justify-between">
                     <span>Preescolar</span>
                     <span className="bg-white/20 px-3 py-1 rounded-full text-sm">
-                      7:00 AM - 12:00 PM
+                      7:00 AM - 12:00 M
                     </span>
                   </div>
                   <div className="flex items-center justify-between">
@@ -288,9 +288,15 @@ export default function ModalitiesSection() {
                     </span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span>Extracurriculares</span>
+                    <span>Extracurriculares Viernes</span>
                     <span className="bg-white/20 px-3 py-1 rounded-full text-sm">
-                      3:00 PM - 5:30 PM
+                      1:00 PM - 3:00 PM
+                    </span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span>Extracurriculares Sábado</span>
+                    <span className="bg-white/20 px-3 py-1 rounded-full text-sm">
+                      8:00 AM - 12:00 M
                     </span>
                   </div>
                 </div>

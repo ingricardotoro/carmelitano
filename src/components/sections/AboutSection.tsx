@@ -39,7 +39,7 @@ const values = [
 const achievements = [
   {
     icon: Star,
-    number: '25+',
+    number: '15+',
     title: 'Años de Experiencia',
     description: 'Más de dos décadas formando líderes'
   },
@@ -65,22 +65,22 @@ const achievements = [
 
 const timeline = [
   {
-    year: '1999',
+    year: '2010',
     title: 'Fundación',
     description: 'Inicio de nuestro centro educativo con visión cristiana y bilingüe'
   },
   {
-    year: '2005',
-    title: 'Acreditación Internacional',
-    description: 'Obtención de certificaciones internacionales en educación bilingüe'
+    year: '2015',
+    title: 'Expansión de Instalaciones',
+    description: 'Mejoras significativas en infraestructura y recursos educativos'
   },
   {
-    year: '2010',
-    title: 'Expansión de Instalaciones',
+    year: '2017',
+    title: 'Instalaciones de Laboratorios',
     description: 'Construcción de nuevas aulas y laboratorios modernos'
   },
   {
-    year: '2015',
+    year: '2019',
     title: 'Tecnología Educativa',
     description: 'Implementación de plataformas digitales y metodologías innovadoras'
   },
@@ -90,9 +90,9 @@ const timeline = [
     description: 'Adaptación exitosa a modelos educativos presenciales y virtuales'
   },
   {
-    year: '2024',
-    title: 'Centro de Excelencia',
-    description: 'Reconocimiento como centro de excelencia en educación bilingüe'
+    year: '2023',
+    title: 'Inicio de Area Bilingüe',
+    description: 'Lanzamiento de nuestro programa académico 100% bilingüe español-inglés'
   }
 ]
 
@@ -283,7 +283,11 @@ export default function AboutSection() {
             </div>
             <div className="flex items-center space-x-2">
               <Clock className="h-5 w-5" />
-              <span>Lun - Vie: 7:00 AM - 4:00 PM</span>
+              <span>Lun - Vie: 7:00 AM - 2:00 PM</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Clock className="h-5 w-5" />
+              <span>Diciembre Lun - Vie: 8:00 AM - 12:00 M</span>
             </div>
           </div>
           <motion.button

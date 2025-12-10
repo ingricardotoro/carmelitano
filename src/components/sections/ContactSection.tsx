@@ -54,8 +54,8 @@ const contactInfo = [
     title: 'Horarios de Atención',
     details: [
       'Lunes a Viernes',
-      '7:00 AM - 4:00 PM',
-      'Sábados: 8:00 AM - 12:00 PM'
+      '7:00 AM - 2:00 PM',
+      'Sábados y Diciembre: 8:00 AM - 12:00 PM'
     ],
     color: 'from-orange-500 to-red-500'
   }

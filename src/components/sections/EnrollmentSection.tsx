@@ -74,49 +74,96 @@ const enrollmentSteps = [
 
 const tuitionPlans = [
   {
-    title: 'Preescolar',
-    subtitle: 'Español y Bilingüe',
-    monthlyFee: '3,000',
-    enrollmentFee: '4,000',
+    title: 'Preescolar en Español',
+    subtitle: 'Kinder y Preparatoria',
+    monthlyFee: 'L. 2,380',
+    enrollmentFee: 'L. 3,450',
     features: [
-      'Horario: 7:00 AM - 12:00 PM',
-      'Almuerzo incluido',
-      'Actividades lúdicas',
-      'Estimulación bilingüe',
-      'Transporte opcional'
+      'Horario: 7:00 AM - 12:00 M',
+      'Áreas verdes recreativas',
+      'Espacio de estimulación temprana',
+      'Acompañamiento psicopedagógico',
+      'Personal capacitado'
     ],
     popular: false,
     color: 'from-pink-500 to-rose-500'
   },
   {
-    title: 'Primaria',
-    subtitle: 'I y II Ciclo',
-    monthlyFee: '3,000',
-    enrollmentFee: '4,000',
+    title: 'Básica en Español',
+    subtitle: 'De 1er a 6to Grado',
+    monthlyFee: 'L. 2,680',
+    enrollmentFee: 'L. 3,650',
     features: [
       'Horario: 7:00 AM - 2:00 PM',
       'Áreas verdes recreativas',
-      'Programa bilingüe intensivo',
-      'Actividades extracurriculares',
-      'Plataforma digital'
+      'Departamento de psicología',
+      'Actividades extracurriculares Incluidas',
+      'Giras pedagógicas'
     ],
-    popular: true,
+    popular: false,
     color: 'from-blue-500 to-cyan-500'
   },
   {
-    title: 'Secundaria',
-    subtitle: 'BTP Humanidades',
-    monthlyFee: '3,000',
-    enrollmentFee: '4,000',
+    title: 'Básica en Español ',
+    subtitle: 'De 7mo a 9no Grado',
+    monthlyFee: 'L. 3,210',
+    enrollmentFee: 'L. 3,995',
+    features: [
+      'Horario: 7:00 AM - 2:00 PM',
+      'Áreas verdes recreativas',
+      'Laboratorios especializados',
+      'Actividades extracurriculares Incluidas',
+      'Giras pedagógicas'
+    ],
+    popular: false,
+    color: 'from-green-500 to-emerald-500'
+  },
+  {
+    title: 'Educ. Media en Español',
+    subtitle: '10mo grado y BCH',
+    monthlyFee: 'L. 3,352',
+    enrollmentFee: 'L. 4,200',
     features: [
       'Horario: 7:00 AM - 2:00 PM',
       'Preparación universitaria',
-      'Bachillerato Humanidades',
+      'Bachillerato Ciencias y Humanidades',
+      'Actividades extracurriculares Incluidas',
       'Laboratorios especializados',
       'Robótica y Computación'
     ],
     popular: false,
-    color: 'from-green-500 to-emerald-500'
+    color: 'from-purple-500 to-purple-500'
+  },
+  {
+    title: 'Prebasica Bilingüe',
+    subtitle: 'Kinder y Preparatoria',
+    monthlyFee: 'L. 3,700',
+    enrollmentFee: 'L. 4,500',
+    features: [
+      'Horario: 7:00 AM - 12:00 M',
+      'Áreas verdes recreativas',
+      'Estimulación bilingüe',
+      'Espacio de estimulación temprana',
+      'Acompañamiento psicopedagógico',
+    ],
+    popular: false,
+    color: 'from-pink-500 to-pink-500'
+  },
+  {
+    title: 'Básica Bilingüe',
+    subtitle: 'De 1er a 3er Grado',
+    monthlyFee: 'L. 3,900',
+    enrollmentFee: 'L. 4,800',
+    features: [
+      'Horario: 7:00 AM - 2:00 PM',
+      'Áreas verdes recreativas',
+      'Desarrollo bilingüe',
+      'Departamento de psicología',
+      'Actividades extracurriculares Incluidas',
+      'Giras pedagógicas'
+    ],
+    popular: false,
+    color: 'from-blue-500 to-cyan-500'
   }
 ]
 
@@ -152,7 +199,7 @@ const importantDates = [
   {
     date: 'Enero',
     event: 'Confirmación de Matrículas',
-    description: 'Formalización y pago de aranceles'
+    description: 'Formalización y pago de inversiones educativas'
   },
   {
     date: 'Febrero',
@@ -286,7 +333,7 @@ export default function EnrollmentSection() {
                     ))}
                   </ul>
 
-                  <motion.button
+                   {/* <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     className={`w-full py-3 rounded-lg font-semibold transition-all duration-300 ${
@@ -296,7 +343,7 @@ export default function EnrollmentSection() {
                     }`}
                   >
                     Solicitar Información
-                  </motion.button>
+                  </motion.button>  */}
                 </div>
               </motion.div>
             ))}
@@ -304,7 +351,7 @@ export default function EnrollmentSection() {
         </motion.div>
 
         {/* Scholarships */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -347,7 +394,7 @@ export default function EnrollmentSection() {
               Solicitar Beca
             </motion.button>
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* Important Dates */}
         <motion.div
@@ -408,7 +455,11 @@ export default function EnrollmentSection() {
               </div>
               <div className="flex items-center space-x-3">
                 <Clock className="h-5 w-5" />
-                <span>Lun - Vie: 8:00 AM - 4:00 PM</span>
+                <span>Lun - Vie: 7:00 AM - 2:00 PM</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Clock className="h-5 w-5" />
+                <span>Diciembre Lun - Vie: 8:00 AM - 12:00 M</span>
               </div>
             </div>
 
@@ -420,14 +471,14 @@ export default function EnrollmentSection() {
               >
                 Agendar Cita
               </motion.button>
-              <motion.button
+              {/* <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="w-full bg-white/20 hover:bg-white/30 text-white font-semibold py-3 rounded-lg transition-colors duration-300 flex items-center justify-center space-x-2"
               >
                 <Download className="h-4 w-4" />
                 <span>Descargar Prospecto</span>
-              </motion.button>
+              </motion.button> */}
             </div>
           </div>
         </motion.div>

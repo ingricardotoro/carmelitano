@@ -24,15 +24,15 @@ const footerLinks = {
   ],
   services: [
     { name: 'Matrícula', href: '#matricula' },
-    { name: 'Becas', href: '#matricula' },
+    //{ name: 'Becas', href: '#matricula' },
     { name: 'Actividades', href: '#nosotros' },
     { name: 'Talleres', href: '#nosotros' },
   ],
   about: [
     { name: 'Nuestra Historia', href: '#nosotros' },
     { name: 'Misión y Visión', href: '#nosotros' },
-    { name: 'Equipo Docente', href: '#nosotros' },
-    { name: 'Instalaciones', href: '#nosotros' },
+    //{ name: 'Equipo Docente', href: '#nosotros' },
+    { name: 'Instalaciones', href: '/galeria' },
   ],
 }
 
@@ -44,7 +44,7 @@ const socialLinks = [
 
 const stats = [
   { icon: Users, number: '500+', label: 'Estudiantes' },
-  { icon: BookOpen, number: '25+', label: 'Años de Experiencia' },
+  { icon: BookOpen, number: '15+', label: 'Años de Experiencia' },
   { icon: GraduationCap, number: '98%', label: 'Tasa de Graduación' },
   { icon: Heart, number: '100%', label: 'Compromiso' },
 ]
@@ -217,14 +217,14 @@ export default function Footer() {
               © 2025 Centro de Educación Bilingüe Carmelitano San José. 
               Todos los derechos reservados.
             </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
+            {/* <div className="flex space-x-6 mt-4 md:mt-0">
               <button className="text-gray-400 hover:text-white text-sm transition-colors duration-300">
                 Política de Privacidad
               </button>
               <button className="text-gray-400 hover:text-white text-sm transition-colors duration-300">
                 Términos de Uso
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

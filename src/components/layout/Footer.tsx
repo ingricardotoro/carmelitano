@@ -149,6 +149,7 @@ export default function Footer() {
                 <motion.a
                   key={social.name}
                   href={social.href}
+                  target="_blank"
                   className={`p-2 bg-gray-800 rounded-lg transition-colors duration-300 ${social.color}`}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
